@@ -182,5 +182,14 @@ namespace PictureViewer
         {
             timer.Stop();
         }
+
+        private void greenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Color c = Color.Green;
+            Color color = Color.FromKnownColor(KnownColor.LightSeaGreen);
+            this.BackColor = c;
+            pictureBox1.BackColor = c;
+            toolStrip1.BackColor = color;
+        }
     }
 }
